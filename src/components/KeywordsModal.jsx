@@ -8,7 +8,6 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
   CircularProgress,
 } from "@chakra-ui/react";
 
@@ -19,20 +18,19 @@ const KeywordsModal = ({ keywords, loading, isOpen, closeModal }) => {
         <ModalOverlay>
           <ModalContent>
             <ModalHeader>Keywords</ModalHeader>
-            <ModalCloseButton />
             <ModalBody
               display="flex"
               alignItems="center"
               justifyContent="center"
             >
               {loading ? (
-                <CircularProgress isIndeterminate color="blue.300" />
+                <CircularProgress isIndeterminate color="teal.300" />
               ) : (
                 <Text>{keywords}</Text>
               )}
             </ModalBody>
             <ModalFooter>
-              <Button colorScheme="blue" onClick={closeModal}>
+              <Button colorScheme="teal" onClick={closeModal}>
                 Close
               </Button>
             </ModalFooter>
