@@ -26,16 +26,16 @@ const TextInput = ({ extractKeywords }) => {
         color="white"
         padding={4}
         marginTop={6}
-        height={200}
+        height={250}
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <Button
-        bg="teal.500"
+        bg="purple.500"
         color="white"
         marginTop={4}
         width="100%"
-        _hover={{ bg: "teal.700" }}
+        _hover={{ bg: "purple.700" }}
         onClick={submitText}
       >
         Extract Keywords

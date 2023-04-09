@@ -9,7 +9,7 @@ const Footer = () => {
         <Image src={logo} marginRight={4} height={8} />
         <Text>Powered by OpenAI |&nbsp;</Text>
         <Link href="https://boapos.xyz" target="_blank">
-          Bruce Apos
+          bruce apos
         </Link>
       </Flex>
     </Box>
